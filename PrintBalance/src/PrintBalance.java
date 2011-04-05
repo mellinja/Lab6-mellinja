@@ -55,6 +55,10 @@ public class PrintBalance{
 		System.out.println(messages.getString("GoodBye"));
 	}
 	
-	
+	public static String testHelper(Locale l, String ref){
+		ResourceBundle messages;
+		messages = ResourceBundle.getBundle("MessagesBundle", l);
+		return messages.getString(ref);
+	}
 
 }
